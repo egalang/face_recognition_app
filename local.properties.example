@@ -1,0 +1,8 @@
+## Copy this file to local.properties and update the values.
+## For Android Emulator, use 10.0.2.2 for services running on your computer.
+## For a real phone, use your PC/LAN IP address.
+
+sdk.dir=C\:\\Users\\YOUR_USERNAME\\AppData\\Local\\Android\\Sdk
+odoo.baseUrl=http\://10.0.2.2\:8069/
+face.baseUrl=http\://10.0.2.2\:8001/
+face.adminApiKey=REPLACE_WITH_SECURE_ADMIN_API_KEY

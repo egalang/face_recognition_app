@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.obbsco.sisattendance.app-mergeDebugResources-64:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Erwin\\.gradle\\caches\\8.13\\transforms\\820c2f2e23ec0cd5818fb56a129c05a2\\transformed\\appcompat-1.7.0\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

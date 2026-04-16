@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.obbsco.sisattendance.app-debug-66:/xml_backup_rules.xml.flat",
+        "source": "com.obbsco.sisattendance.app-main-68:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.obbsco.sisattendance.app-debug-66:/xml_data_extraction_rules.xml.flat",
+        "source": "com.obbsco.sisattendance.app-main-68:/xml/data_extraction_rules.xml"
+    }
+]
