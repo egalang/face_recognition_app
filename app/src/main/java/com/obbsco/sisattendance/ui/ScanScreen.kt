@@ -208,7 +208,8 @@ private fun CameraCaptureView(
         cameraSelector = CameraSelector.DEFAULT_FRONT_CAMERA
         setEnabledUseCases(LifecycleCameraController.IMAGE_CAPTURE)
 
-        imageCaptureMode = ImageCapture.CAPTURE_MODE_MAXIMIZE_QUALITY
+        // imageCaptureMode = ImageCapture.CAPTURE_MODE_MAXIMIZE_QUALITY
+        imageCaptureMode = ImageCapture.CAPTURE_MODE_MINIMIZE_LATENCY
     }
 }
 
@@ -246,14 +247,8 @@ private fun CameraCaptureView(
                             override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
                                 try {
                                     val fixedFile = rotateImageIfRequired(file)
-                                    // 🔥 Save to public Downloads folder
-                                    val debugFile = File(
-                                        Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
-                                        fixedFile.name
-                                    )
-
-                                    fixedFile.copyTo(debugFile, overwrite = true)
-
+                                    // val fixedFile = processAndOptimizeImage(file)
+                                    
                                     // ✅ ADD THIS LINE HERE
                                     Log.d("SCAN_DEBUG", "Captured file: ${fixedFile.absolutePath}, size=${fixedFile.length()}")
 
@@ -346,4 +341,65 @@ fun rotateImageIfRequired(file: File): File {
     }
 
     return rotatedFile
+}
+
+fun processAndOptimizeImage(file: File): File {
+    val exif = ExifInterface(file.absolutePath)
+    val orientation = exif.getAttributeInt(
+        ExifInterface.TAG_ORIENTATION,
+        ExifInterface.ORIENTATION_NORMAL
+    )
+
+    val rotation = when (orientation) {
+        ExifInterface.ORIENTATION_ROTATE_90 -> 90f
+        ExifInterface.ORIENTATION_ROTATE_180 -> 180f
+        ExifInterface.ORIENTATION_ROTATE_270 -> 270f
+        else -> 0f
+    }
+
+    // ✅ Downsample while decoding
+    val options = BitmapFactory.Options().apply {
+        inJustDecodeBounds = false
+        inSampleSize = 2  // 🔥 reduces resolution by ~50%
+    }
+
+    var bitmap = BitmapFactory.decodeFile(file.absolutePath, options)
+
+    // ✅ Rotate if needed
+    if (rotation != 0f) {
+        val matrix = Matrix().apply { postRotate(rotation) }
+        bitmap = Bitmap.createBitmap(
+            bitmap,
+            0,
+            0,
+            bitmap.width,
+            bitmap.height,
+            matrix,
+            true
+        )
+    }
+
+    // ✅ Resize to max width (VERY important)
+    val maxWidth = 720
+    val scale = maxWidth.toFloat() / bitmap.width
+
+    val resized = if (bitmap.width > maxWidth) {
+        Bitmap.createScaledBitmap(
+            bitmap,
+            maxWidth,
+            (bitmap.height * scale).toInt(),
+            true
+        )
+    } else {
+        bitmap
+    }
+
+    val optimizedFile = File(file.parent, "opt_${file.name}")
+
+    FileOutputStream(optimizedFile).use {
+        // 🔥 Sweet spot for face recognition
+        resized.compress(Bitmap.CompressFormat.JPEG, 70, it)
+    }
+
+    return optimizedFile
 }

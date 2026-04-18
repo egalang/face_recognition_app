@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="35" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:4:5-67
-11-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:4:22-64
+11-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:4:22-64
 12    <uses-permission android:name="android.permission.CAMERA" />
-12-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:5:5-65
-12-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:5:22-62
+12-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:5:5-65
+12-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:5:22-62
 13
 14    <permission
 14-->[androidx.core:core:1.15.0] C:\Users\Erwin\.gradle\caches\8.13\transforms\670acbc1d4afbe332a2a615fff347f63\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
@@ -30,39 +30,39 @@
 19-->[androidx.media3:media3-common:1.9.0] C:\Users\Erwin\.gradle\caches\8.13\transforms\5ff1d80d5e6f9bd974bd514e6accd375\transformed\media3-common-1.9.0\AndroidManifest.xml:22:22-76
 20
 21    <application
-21-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:7:5-23:19
+21-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:7:5-23:19
 22        android:allowBackup="true"
-22-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:8:9-35
+22-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:8:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 23-->[androidx.core:core:1.15.0] C:\Users\Erwin\.gradle\caches\8.13\transforms\670acbc1d4afbe332a2a615fff347f63\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:label="SIS Attendance"
-26-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:9:9-39
+26-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:9:9-39
 27        android:supportsRtl="true"
-27-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:10:9-35
+27-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:10:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.SISAttendance"
-29-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:12:9-51
+29-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:12:9-51
 30        android:usesCleartextTraffic="true" >
-30-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:11:9-44
+30-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:11:9-44
 31        <activity
-31-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:14:9-22:20
+31-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:14:9-22:20
 32            android:name="com.obbsco.sisattendance.MainActivity"
-32-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:15:13-41
+32-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:15:13-41
 33            android:exported="true"
-33-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:16:13-36
+33-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:16:13-36
 34            android:screenOrientation="portrait" >
-34-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:17:13-49
+34-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:17:13-49
 35            <intent-filter>
-35-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:18:13-21:29
+35-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:18:13-21:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:19:17-69
-36-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:19:25-66
+36-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:19:17-69
+36-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:19:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:20:17-77
-38-->C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\AndroidManifest.xml:20:27-74
+38-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:20:17-77
+38-->C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\AndroidManifest.xml:20:27-74
 39            </intent-filter>
 40        </activity>
 41

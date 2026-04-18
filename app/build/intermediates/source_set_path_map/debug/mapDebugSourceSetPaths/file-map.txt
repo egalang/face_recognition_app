@@ -60,10 +60,10 @@ com.obbsco.sisattendance.app-fragment-1.5.4-58 C:\Users\Erwin\.gradle\caches\8.1
 com.obbsco.sisattendance.app-core-viewtree-1.0.0-59 C:\Users\Erwin\.gradle\caches\8.13\transforms\f040ef61ddca86aef82c07c4d8416e20\transformed\core-viewtree-1.0.0\res
 com.obbsco.sisattendance.app-camera-lifecycle-1.6.0-60 C:\Users\Erwin\.gradle\caches\8.13\transforms\f386f27a7521321c6da270becda91978\transformed\camera-lifecycle-1.6.0\res
 com.obbsco.sisattendance.app-profileinstaller-1.4.0-61 C:\Users\Erwin\.gradle\caches\8.13\transforms\f3f03f40054b40539df8dc4da5b828a4\transformed\profileinstaller-1.4.0\res
-com.obbsco.sisattendance.app-pngs-62 C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\build\generated\res\pngs\debug
-com.obbsco.sisattendance.app-resValues-63 C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\build\generated\res\resValues\debug
-com.obbsco.sisattendance.app-packageDebugResources-64 C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.obbsco.sisattendance.app-packageDebugResources-65 C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.obbsco.sisattendance.app-debug-66 C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.obbsco.sisattendance.app-debug-67 C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\debug\res
-com.obbsco.sisattendance.app-main-68 C:\Users\Erwin\Downloads\OBBServerSISAttendanceAndroid\OBBServerSISAttendanceAndroid\app\src\main\res
+com.obbsco.sisattendance.app-pngs-62 C:\Users\Erwin\Downloads\face_recognition_app\app\build\generated\res\pngs\debug
+com.obbsco.sisattendance.app-resValues-63 C:\Users\Erwin\Downloads\face_recognition_app\app\build\generated\res\resValues\debug
+com.obbsco.sisattendance.app-packageDebugResources-64 C:\Users\Erwin\Downloads\face_recognition_app\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.obbsco.sisattendance.app-packageDebugResources-65 C:\Users\Erwin\Downloads\face_recognition_app\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.obbsco.sisattendance.app-debug-66 C:\Users\Erwin\Downloads\face_recognition_app\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.obbsco.sisattendance.app-debug-67 C:\Users\Erwin\Downloads\face_recognition_app\app\src\debug\res
+com.obbsco.sisattendance.app-main-68 C:\Users\Erwin\Downloads\face_recognition_app\app\src\main\res
